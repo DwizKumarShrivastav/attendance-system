@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="dashboard">
+
+  <div class="sidebar">
+    <h2>Student</h2>
+    <ul>
+      <li class="active">Dashboard</li>
+      <li onclick="logout()">Logout</li>
+    </ul>
+  </div>
+
+  <div class="main">
+
+    <div class="topbar">
+      <h3 id="studentName">Student Dashboard</h3>
+    </div>
+
+    <!-- STATS -->
+    <div class="cards">
+      <div class="card">
+        <h3>Total %</h3>
+        <p id="attendancePercent">0%</p>
+      </div>
+
+      <div class="card">
+        <h3>Present</h3>
+        <p id="presentCount">0</p>
+      </div>
+
+      <div class="card">
+        <h3>Absent</h3>
+        <p id="absentCount">0</p>
+      </div>
+    </div>
+
+    <!-- TABLE -->
+    <div class="table-section">
+      <h3>Attendance Records</h3>
+      <table border="1" width="100%">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Subject</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody id="attendanceTable"></tbody>
+      </table>
+    </div>
+
+  </div>
+</div>
+
+<script src="script.js"></script>
+<script>loadStudentDashboard();</script>
+
+</body>
+</html>

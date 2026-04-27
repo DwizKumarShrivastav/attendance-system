@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Teacher Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="dashboard">
+
+  <div class="sidebar">
+    <h2>Teacher</h2>
+    <ul>
+      <li class="active">Dashboard</li>
+      <li onclick="showProfile()">Profile</li>
+      <li>Student List</li>
+      <li>Settings</li>
+      <li onclick="logout()">Logout</li>
+    </ul>
+  </div>
+
+  <div class="main">
+
+    <div class="topbar">
+      <h3>Teacher Panel</h3>
+      <div class="profile-icon">👤</div>
+    </div>
+
+    <!-- SUBJECT -->
+    <div class="form-box">
+      <!-- TOKEN INPUT -->
+      <input id="token" placeholder="Enter Token">
+      <button onclick="verifyToken()">Verify Token</button>
+
+      <br><br>
+      <input id="subjectId" placeholder="Enter Subject ID">
+      <button onclick="loadStudents()">Load Students</button>
+    </div>
+
+    <!-- STUDENTS -->
+    <div id="studentList"></div>
+
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

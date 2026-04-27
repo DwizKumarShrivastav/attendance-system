@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="login-container">
+
+  <!-- LEFT SIDE -->
+  <div class="login-left">
+    <h1>Login</h1>
+    <p>Enter your account details</p>
+
+    <div class="roles">
+      <label><input type="radio" name="role" value="admin" checked> Admin</label>
+      <label><input type="radio" name="role" value="teacher"> Teacher</label>
+      <label><input type="radio" name="role" value="student"> Student</label>
+    </div>
+
+    <input id="username" placeholder="Username">
+    <div class="password-box">
+      <input id="password" type="password" placeholder="Password">
+      <span class="eye" onclick="togglePassword()">👁️</span>
+    </div>
+
+    <button onclick="login()"><element style="font-size: 20px;">Login</element></button>
+
+    <p id="error"></p>
+  </div>
+
+  <!-- RIGHT SIDE -->
+  <div class="login-right">
+    <h1>Welcome to<br>student portal</h1>
+    <p>Login to access your account</p>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

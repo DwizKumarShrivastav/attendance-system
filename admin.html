@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Panel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="dashboard">
+
+  <div class="sidebar">
+    <h2>Admin</h2>
+    <ul>
+      <li class="active">Dashboard</li>
+      <li onclick="logout()">Logout</li>
+    </ul>
+  </div>
+
+  <div class="main">
+
+    <div class="topbar">
+      <h2>Admin Dashboard</h2>
+    </div>
+
+    <!-- ADD STUDENT -->
+    <div class="form-card">
+      <h3>Add Student</h3>
+      <input id="s_name" placeholder="Name">
+      <input id="s_username" placeholder="Username">
+      <input id="s_password" placeholder="Password">
+      <input id="s_erp" placeholder="ERP">
+      <input id="s_section" placeholder="Section">
+      <button onclick="addStudent()">Add Student</button>
+    </div>
+
+    <!-- ADD TEACHER -->
+    <div class="form-card">
+      <h3>Add Teacher</h3>
+      <input id="t_name" placeholder="Name">
+      <input id="t_username" placeholder="Username">
+      <input id="t_password" placeholder="Password">
+      <input id="t_dept" placeholder="Department">
+      <button onclick="addTeacher()">Add Teacher</button>
+    </div>
+
+    <!-- ADD SUBJECT -->
+    <div class="form-card">
+      <h3>Add Subject</h3>
+      <input id="sub_name" placeholder="Subject Name">
+      <input id="sub_section" placeholder="Section">
+      <button onclick="addSubject()">Add Subject</button>
+    </div>
+
+    <!-- GENERATE TOKEN -->
+    <div class="form-card">
+      <h3>Generate Token</h3>
+      <input type="number" id="token_subject_id" placeholder="Enter Subject ID">
+      <button onclick="generateToken()">Generate Token</button>
+    </div>
+
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
